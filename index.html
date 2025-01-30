@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment</title>
-</head>
-<body>
-    <h1>Hello!</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cfeb93aede.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+      .font-adlam-display {
+        font-family: "ADLaM Display", serif;
+      }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'register-primary': '#FFDC26',
+                'black': '#111111',
+                'nav-color': '#FFF9F4',
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body class="font-sora" >
+    <header>
+      <nav style="background-color: #FFF9F4;">
+       <div class="w-11/12 mx-auto">
+        <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+               <!--  -->
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <img src="./images/logo-header.png" alt="">
+              <a class="text-black text-2xl font-normal ml-4 hidden lg:flex ">Browse<span class="text-orange-300">4</span>Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-black font-normal text-lg">Find a pet</a></li>
+                <li><a class="text-black font-normal text-lg">Breeds</a></li>
+                <li><a class="text-black font-normal text-lg">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <p><i class="fa-regular fa-bell text-2xl mr-5"></i></p>
+              <p><i class="fa-solid fa-magnifying-glass text-2xl mr-5"></i></p>
+              <button class="text-black font-normal text-xl mr-5 border-2 border-orange-200 px-5 py-2 rounded-lg">Login</button>
+              <a class="bg-register-primary text-black px-5 py-2 rounded-lg font-normal text-lg">Register</a>
+            </div>
+            <div class="lg:hidden">
+              <img class="w-5 ml-40 " src="./images/menu.jpg" alt="">
+            </div>
+          </div>
+       </div>
+      </nav>
+      <!-- <div class="w-11/12 mx-auto">
+        <div>
+            <div>
+                <h2>Pamper Your Pet, Because They Deserve the Bes</h2>
+                <h6>Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</h6>
+                <button class="bg-register-primary text-black font-normal text-lg px-5 py-2 rounded-lg">Find a pet</button>
+            </div>
+            <div>
+                <img class="w-[50%]" src="./images/cat-big.png" alt="">
+            </div>
+        </div>
+      </div> -->
+    </header>
+  </body>
 </html>
