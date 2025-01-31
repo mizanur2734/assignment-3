@@ -35,8 +35,11 @@
             colors: {
               clifford: "#da373d",
               "register-primary": "#FFDC26",
-              black: "#111111",
               "nav-color": "#FFF9F4",
+              "orange": "#F8CCFB",
+              "blue" :  "#ACD2FD",
+              "orange-left": "#FFF9F4",
+              "orange-right": "#F9DF8A"
             },
           },
         },
@@ -94,6 +97,7 @@
             </div>
           </div>
         </div>
+        <hr class="bg-slate-500 border-2 lg:hidden">
       </nav>
       <div class="w-11/12 mx-auto lg:my-24 my-12">
         <div class="relative min-h-screen">
@@ -205,8 +209,9 @@
         </div>
       </section>
       <section class="lg:my-24 my-12">
-        <div class="flex flex-col lg:flex-row gap-6">
-          <div class="lg:p-12 p-8 relative bg-[#F9DF8A] rounded-xl">
+        <h3 class="font-adlam-display lg:text-4xl text-3xl font-normal text-black">Trending Pet Products</h3>
+        <div class="flex mt-8 flex-col lg:flex-row gap-6">
+          <div class="lg:p-12 p-8 relative lg:pb-0 pb-28 bg-[#F9DF8A] rounded-xl">
             <div>
               <h4 class="font-adlam-display lg:text-2xl text-xl font-normal text-black">
                 T- Shirt For Dogs
@@ -295,6 +300,30 @@
             
           </div>
         </div>
+      </section>
+      <section>
+        <h3 class="font-adlam-display lg:text-4xl text-3xl font-normal text-black">Everyday low Price</h3>
+        <div class="flex flex-col lg:flex-row gap-6">
+                <div class="w-full flex rounded-xl items-center justify-center  bg-gradient-to-r from-orange to-blue">
+                    <div class="lg:space-y-2 space-x-1">
+                        <h6 class="text-black lg:text-lg font-normal">Under Price</h6>
+                        <h4 class="font-adlam-display text-black lg:text-3xl text-1xl font-normal">Pet Grooming Mitt</h4>
+                        <h5 class="font-adlam-display text-white lg:text-xl font-normal">(Easy Hair Removal)</h5>
+                        <h2 class="font-adlam-display lg:text-5xl text-3xl font-normal">$7.99</h2>
+                    </div>
+                        <img class="w-[40%]" src="./images/cute-dog-mid.png" alt="">
+                    </div>
+                <div class="relative px-20 py-8 pb-28 bg-gradient-to-r from-orange-left to-orange-right rounded-xl">
+                <div>
+                    <h4 class="font-adlam-display text-black lg:text-3xl text-xl font-normal">T-Shirt for Dogs</h4>
+                    <h2 class="font-adlam-display text-orange-300 lg:text-5xl
+                    text-3xl font-normal">$7.99</h2>
+                </div>
+                <div class="absolute bottom-0 right-0">
+                    <img class="lg:w-full w-[50%]" src="images/cute-pet-small.png" alt="">
+                </div>
+                </div>
+            </div>
       </section>
     </main>
   </body>
