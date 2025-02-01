@@ -40,7 +40,8 @@
               "blue" :  "#ACD2FD",
               "orange-left": "#FFF9F4",
               "orange-right": "#F9DF8A",
-              "orange-bg": "#FFDC2680"
+              "orange-bg": "#FFDC2680",
+              "pink-bg": "#FFF9F4"
             },
           },
         },
@@ -302,7 +303,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="lg:my-24 my-12">
         <h3 class="font-adlam-display lg:text-4xl text-3xl font-normal text-black">Everyday low Price</h3>
         <div class="flex flex-col lg:flex-row gap-6 mt-8">
                 <div class="w-full flex rounded-xl items-center justify-center  bg-gradient-to-r from-orange to-blue">
@@ -326,15 +327,27 @@
                 </div>
             </div>
       </section>
-      <section class="lg:my-24 my-12">
-       
-      </section>
-    </main>
-    <div class="bg-[#FFDC2680]">
-        <footer class="footer justify-between lg:px-16 px-6 pt-40 pb-20 text-base-content">
+      </main>
+      <footer class="relative mt-80">
+        <section class="absolute -translate-y-1/2 w-full mx-auto">
+          <div class="mx-auto w-11/12 rounded-2xl bg-pink-bg p-16 flex flex-col lg:flex-row justify-stretch items-center">
+              <div>
+                  <img class="w-[70%]" src="./images/cute-pet-mid.png" alt="">
+              </div>
+              <div class="space-y-4 text-center lg:text-start">
+                  <h3 class="font-adlam-display text-black lg:text-4xl text-2xl font-normal">Get Pawsome News!</h3>
+                  <h5 class="lg:text-lg font-normal text-black">Exclusive training tips, ticks, product deals and more.</h5>
+                  <input type="email" placeholder="Enter email" class="input  w-full max-w-xs bg-white" />
+                  <br>
+                  <button class="bg-orange-bg px-8 py-3 rounded-lg text-black font-normal lg:text-lg">Subscribe</button>
+              </div>
+          </div>
+        </section>
+        <div class="bg-orange-bg">
+        <footer class="footer justify-between lg:px-16 px-6 lg:pt-72 pt-96 pb-20 text-base-content">
             <nav>
               <div class="flex items-center justify-center gap-4"><img src="./images/logo-footer.png" alt=""> 
-              <h5 class="footer-title text-2xl font-normal text-black">Browse4Pets</h5></div>
+              <h5 class="footer-title text-2xl font-normal text-black">Browse<span class="text-red-300">4</span>Pets</h5></div>
               <p class="text-xl font-normal text-black">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
             </nav>
             <nav>
@@ -353,7 +366,8 @@
               </div>
               </div>
             </nav>
-          </footer>
+        </footer>
         </div>
+    </footer>
   </body>
 </html>
